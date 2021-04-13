@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css_img/css.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>linux command</title>
+  </head>
+  <body>
+    <!--шапка с логотипом и навигацией-->
+
+    <header class="header">
+      <!--Тегу header присвоили класс header-->
+
+      <div class="conteiner">
+        <!--подвязываем ранее созданный контейнер внутри header (хедера)-->
+
+        <!--##################################################################################-->
+        <div class="header_inner">
+          <!--header_inner ОТКРЫЛИ нижнюю часть header (хедера)-->
+
+          <!--**********************************************************************************-->
+          <!--добавляем еще 2 элемента !!!  Логотип и навигация !!!-->
+          <div class="header_logo">
+            <a name="Top">Linux command. Home page</a>
+          </div>
+          <!--ОТКРЫЛСЯ И ЗАКРЫЛСЯ Логотип-->
+          <!--**********************************************************************************-->
+
+          <!--**********************************************************************************-->
+          <!--Начало НАВИГАЦИИ (в ней находятся ссылки и иконки(корзина 
+            для покупок,поиск,твиты и прочее))-->
+          <nav class="nav">
+            <a class="nav_link" href="#Основное">Основные</a><br />
+            <a class="nav_link" href="#Настройки">Настройки</a><br />
+            <a class="nav_link" href="#Информация">Информация</a><br />
+            <a class="nav_link" href="#Операции">Операции</a><br />
+            <a class="nav_link" href="#Терминал">Терминал</a><br />
+            <a class="nav_link" href="#Процессы">Процессы</a><br />
+            <a class="nav_link" href="#Сеть">Сети</a><br />
+            <a class="nav_link" href="#Второстепенное">Второстепенное</a><br />
+            <!-- <a class="nav_link" href="#">Поиск</a><br />
+            <a class="nav_link" href="#">Программирование</a><br />
+            <a class="nav_link" href="#">Органайзер</a><br />
+            <a class="nav_link" href="#">Администрирование</a> -->
+          </nav>
+          <!--Конец НАВИГАЦИИ-->
+          <!--**********************************************************************************-->
+        </div>
+        <!--header_inner ЗАКРЫЛИ нижнюю часть хедера-->
+        <!--##################################################################################-->
+      </div>
+    </header>
+
+    <div class="intro">
+      <div class="conteiner"></div>
+    </div>
+    <div class="back_table">
+      <table border="1">
+        <!-- Раздел 1 -->
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <!-- table row  -->
+
+        <th title="Раздел 1" colspan="2" class="table_header_cell">
+          <a name="Основное">Основное, системное.</a>
+        </th>
+        <tr>
+          <!-- Подраздел 1 раздела 1 -->
+          <th colspan="2" class="table_header_cell_second">sudo</th>
+        </tr>
+        <tr>
+          <td class="first_cell">sudo</td>
+          <td class="second_cell">
+            Sudo (substitute user and do, подменить пользователя и выполнить ) —
+            выполнение команд от имени root или другого пользователя.
+          </td>
+        </tr>
+        <!-- Подраздел 2 раздела 1 -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">apt</th>
+        </tr>
+        <tr>
+          <td class="first_cell">apt</td>
+          <td class="second_cell">
+            Менеджер пакетов с интерфейсом командной строки. Он предоставляет
+            команды для поиска и управления, а также запросов информации о
+            пакетах.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">sudo !!</td>
+          <td class="second_cell">
+            Команда дублирует пред. идущую команду, в которой забыли прописать
+            <b>sudo</b>, пример : <span class="opaciti_text">sudo </span>
+            <b>apt-get install alsa </b>, команда выдаст ошибку прав
+            запуска/досупа. Чтоб не повторять всю команду (sudo
+            <b>apt-get install alsa</b>) второй раз, достаточно написать
+            <b>"sudo !!"</b>
+          </td>
+        </tr>
+        <!-- Подраздел 3 раздела 1 -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">
+            Выключение/перезагрузка ПК
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">sudo shutdown now</td>
+          <td class="second_cell">Команда выключает ПК</td>
+        </tr>
+        <tr>
+          <td class="first_cell">sudo reset</td>
+          <td class="second_cell">Команда перезагружает ПК</td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            Команда перед которой стоит пробел (не подчеркивание) не сохраняется
+            в память (историю) использованных команд
+          </td>
+        </tr>
+
+        <!-- Конец раздела 1 -->
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <!-- Раздел 2 -->
+
+        <th title="Раздел 2" colspan="2" class="table_header_cell">
+          <a name="Настройки">
+            Установка/обновление/настройка/создание команд/удаление
+            программ,чистка системы.
+          </a>
+        </th>
+
+        <!-- Подраздел 1 раздела 2 Установка -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Установка</th>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <span class="opaciti_text">sudo </span> apt-get install alsa
+          </td>
+          <td class="second_cell">Установка программы alsa</td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            sudo apt install pulseaudio-equalizer<br />
+            load-module module-equalizer-sink<br />
+            load-module module-dbus-protocol<br />
+            pulseaudio --kill<br />
+            pulseaudio --start
+          </td>
+          <td class="second_cell">
+            Подробная установка на сайте
+            <a
+              href="https://www.newalive.net/199-ekvalayzer-dlya-pulseaudio-v-debian-stretch.html"
+              >Эквалайзер для PulseAudio в Debian Stretch</a
+            >. Звук
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            dpkg --install code_1.49.1-1600299189_amd64.deb
+          </td>
+          <td class="second_cell">
+            Установка предварительно скачанногой программы VScode. Название
+            установочного файла code_1.49.1-1600299189_amd64.deb
+          </td>
+        </tr>
+
+        <!-- Подраздел 2 раздела 2 Обновление -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Обновление</th>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <span class="opaciti_text">sudo </span> apt-get update
+          </td>
+          <td class="second_cell">Поиск обновлений системы</td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <span class="opaciti_text">sudo</span> update-grub
+          </td>
+          <td class="second_cell">Обновление GRUB</td>
+        </tr>
+
+        <!-- Подраздел 3 раздела 2 Настройка -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Настройка</th>
+        </tr>
+        <tr>
+          <td class="first_cell">qpaeq</td>
+          <td class="second_cell">Команда запускает эквалайзер. Звук</td>
+        </tr>
+        <!-- Подраздел 4 раздела 2 Создание команд -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Создание команд</th>
+        </tr>
+        <tr>
+          <td class="first_cell">alias info=ls</td>
+          <td class="second_cell">
+            Создание команды на 1 сеанс до перезагрузки (команда ls будет
+            выполняться при введении info в консоль).
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">alias viber='/opt/viber/Viber %u'</td>
+          <td class="second_cell">
+            Создание своей команды для запуска вайбер, будет работать только до
+            перезагрузки линукс.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">gedit ~/.bash_aliases</td>
+          <td class="second_cell">
+            !!!Создание постоянной команды!!! <br />Данная команда открывает
+            файл баш, в которсый необходимо добавить команду, на пример alias
+            viber='/opt/viber/Viber %u' <br />
+            !!! (opt/viber/Viber %u мы берем из свойств ярлыка запуска данной
+            программы)!!! <br />Cохраняем. Команда будет работать и после ребута
+            системы. Ссылка на статью
+            <a href="https://linuxrussia.com/terminal-alias.html"
+              >Терминал Linux. Создание alias (псевдонима) в Ubuntu.</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">gedit file.txt</td>
+          <td class="second_cell"></td>
+        </tr>
+
+        <!-- Подраздел 5 раздела 2 Удаление/чистка -->
+
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Удаление/чистка</th>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <span class="opaciti_text">sudo </span>apt-get remove alsa
+          </td>
+          <td class="second_cell">
+            Удаление установленной программы на примере alsa
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first_cell">
+            <span class="opaciti_text">sudo </span> apt autoclean
+          </td>
+          <td class="second_cell">
+            Чистка системы. Очищает локальный репозиторий от извлеченных файлов
+            пакетов, но удаляет только те файлы, которые больше не могут быть
+            загружены и практически бесполезны. Это помогает сохранить ваш кэш
+            от переполнения.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <span class="opaciti_text">sudo </span> apt autoremove
+          </td>
+
+          <td class="second_cell">
+            Проверяет системы и чистка от устаревших ядер. Удаляет пакеты,
+            которые были установлены автоматически, поскольку они требовались
+            для некоторых других пакетов, но после удаления этих пакетов они
+            больше не нужны. Иногда при обновлении рекомендуется выполнить эту
+            команду.
+          </td>
+        </tr>
+
+        <!-- Конец раздела 2 -->
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <!-- Начало раздела 3 -->
+
+        <th title="Раздел 3" colspan="2" class="table_header_cell">
+          <a name="Информация"
+            ><li>
+              Информация о линукс, пользователе, имени ПК в сети, днях недели.
+            </li>
+            <li>Информация о файлах, разделах.</li>
+          </a>
+        </th>
+        <!-- Подраздел 1 раздела 3 Информация о Linux -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">
+            Информация о Linux, пользователе, имени ПК в сети, днях недели.
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              class="command_link"
+              href="css_img/images/command_link/screenfetch.png"
+              >screenfetch
+            </a>
+          </td>
+          <td class="second_cell">
+            Программа выводит подробную информацию об ОС и железе
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              class="command_link"
+              href="css_img/images/command_link/uname -a.png"
+              >uname -a
+            </a>
+          </td>
+          <td class="second_cell">
+            Информация о дистрибутиве, версии ядра, разрядность
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a class="command_link" href="css_img/images/command_link/arch.png"
+              >arch
+            </a>
+          </td>
+          <td class="second_cell">
+            Команда показывает розрядность (архитектуру) системы
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              class="command_link"
+              href="css_img/images/command_link/lsb_release -a.png"
+              >lsb_release -a</a
+            >
+          </td>
+          <td class="second_cell">
+            Показывает дистрибутив нашей ОС и основанных на ней ОС
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              class="command_link"
+              href="css_img/images/command_link/hostname.png"
+              >hostname</a
+            >
+          </td>
+          <td class="second_cell">Имя ПК в сети</td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a class="command_link" href="css_img/images/command_link/w.png"
+              >w</a
+            >
+          </td>
+          <td class="second_cell">
+            Показывает какой пользователь в системе, как давно зашел, загрузку
+            цп и т.д.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a class="command_link" href="css_img/images/command_link/pwd.png"
+              >pwd</a
+            >
+          </td>
+          <td class="second_cell">
+            Показывает в какой директории находимся в данный момент
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              class="command_link"
+              href="css_img/images/command_link/uptime.png"
+              >uptime</a
+            >
+          </td>
+          <td class="second_cell">
+            Команда показывает сколько ОС работает без перезагрузки
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a class="command_link" href="css_img/images/command_link/date.png"
+              >date</a
+            >
+          </td>
+          <td class="second_cell">
+            Показывает дату, день недели, время и т. д.
+          </td>
+        </tr>
+        <!-- Подраздел 2 раздела 3 Информация о файлах, разделах. -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">
+            Информация о файлах, разделах.
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              class="command_link"
+              href="css_img/images/command_link/file html.html.png"
+              >file html.html</a
+            >
+          </td>
+          <td class="second_cell">
+            Выдает информацию о файлах на примере <b>file html.html</b> (его
+            расширение, содержимое или файл пуст).
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              class="command_link"
+              href="css_img/images/command_link/cmp html.html test.html.png"
+              >cmp html.html test.html</a
+            >
+          </td>
+          <td class="second_cell">
+            Сравнивает содержимое 2х файлов и выдает в консоль их отличия.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a class="command_link" href="css_img/images/command_link/df.png"
+              >df</a
+            >
+          </td>
+          <td class="second_cell">
+            Показывает разделы на диске (файловую ситему, блоки, сколько занято
+            или доступно).
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              href="css_img/images/command_link/du -max -h.png"
+              class="command_link"
+              >du -max -h</a
+            >
+          </td>
+          <td class="second_cell">
+            Отображает все файлы в текущем каталоге и их размер. <br />Можно
+            применять команду без -max (показывает все файлы) и -h (показывает
+            их размер) или с ними, возможно применять их по отдельности.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a
+              href="css_img/images/command_link/wc html.html.png"
+              class="command_link"
+              >wc html.html</a
+            >
+          </td>
+          <td class="second_cell">
+            Команда показывает сколько строк слов и символов в данном файле.<br />
+            строка; слово; символ; название файла.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            <a href="css_img/images/command_link/tree.png" class="command_link"
+              >tree</a
+            >
+          </td>
+          <td class="second_cell">
+            Программа/команда отображает древовидную структуру файловой системы
+          </td>
+        </tr>
+
+        <!-- Конец раздела 3 -->
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <!-- Начало раздела 4 -->
+
+        <th title="Раздел 4" colspan="2" class="table_header_cell">
+          <a name="Операции"
+            ><li>
+              Операции с каталогами/директориями/файлами, <br />
+              cоздание/переименовывание/копирование/вырезание/вставляние,
+              архивация/разархивация,<br />конвертирование, удаление
+              файлов/директорий !!! не вписывает текст!!!
+            </li>
+            <li>Поиск файлов, слов в файлах.</li>
+          </a>
+        </th>
+        <!-- Подраздел 1 раздела 4 ls -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">ls</th>
+        </tr>
+        <tr>
+          <td class="first_cell">ls</td>
+          <td class="second_cell">
+            ls Команда показывает каталоги (папки в виндовс)
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">ls -a</td>
+          <td class="second_cell">
+            Показывает все файлы и директори находящиеся в данном каталоге
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">ls -l</td>
+          <td class="second_cell">
+            Расширенные (подробные) свойства каталогов (в виде списка)
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">ls -a -l или ls -al</td>
+          <td class="second_cell">
+            Выдет полный подробный список (сочатает в себе 2 команды)
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">ls Рабочий\ стол/folder/</td>
+          <td class="second_cell">
+            Находясь в любой дериктории, данной командой можно получить сведенья
+            о файлах по задаваемому адресу (Рабочий\ стол/folder/), в данной
+            ситуации folder не входя в нее командой cd
+          </td>
+        </tr>
+        <!-- Подраздел 2 раздела 4 cd -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">cd</th>
+        </tr>
+        <tr>
+          <td class="first_cell">cd</td>
+          <td class="second_cell">Переход по каталогам</td>
+        </tr>
+        <td class="first_cell">cd ..</td>
+        <td class="second_cell">Переходит в пред. идущий каталог</td>
+        <tr>
+          <td class="first_cell">cd -</td>
+          <td class="second_cell">
+            Переход в последний каталог !!!в котором был до перемещения!!!
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">cd Видео</td>
+          <td class="second_cell">Переход в каталог видео</td>
+        </tr>
+        <tr>
+          <td class="first_cell">cd Рабочий\ стол/folder/ && ls -l</td>
+          <td class="second_cell">
+            Переходит сразу в каталог folder и выводит информацию о содержимых
+            ею файлов
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            hmod 777 text.txt <br />
+            chmod 777 * <br />
+            chmod -R 777 *
+          </td>
+          <td class="second_cell">
+            Инструмент для повышения безопасности ОС, который позволяет
+            назначить права доступа файлам или каталогам. <br />
+            777 это -rwxrwxrwx <br />
+            666 это -rw-rw-rw <br />
+            744 это -rwxr--r-- <br />
+            700 это -rwx------ <br />
+            644 это -rw-r--r-- <br />
+            640 это -rw-r----- <br />
+            444 это -r--r--r-- <br />
+            755 это -rwxr-xr-x <br />
+            505 это -r-x---r-x <br />
+            rwx -означает r - read чтение w - write запись x - executable
+            исполняемый.
+            <p>Задает команду для всех файлов в каталоге.</p>
+            <p>
+              Рекурсивно (-R обходить рекурсивно, то есть не только файлы
+              текущей директории но и все вложенные каталоги и файлы) задает
+              права доступа всем файлам текущей директории и всем вложенным
+              каталогам и файлам в нее.
+            </p>
+          </td>
+        </tr>
+        <!-- Подраздел 3 раздела 4 Создание директорий/файлов -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">
+            Создание директорий/файлов
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">mkdir new</td>
+          <td class="second_cell">
+            Создает каталог с любым именем (в данном случае «new») в текущей
+            директории
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">mkdir -p new/new2</td>
+          <td class="second_cell">Создает древо директорий</td>
+        </tr>
+        <tr>
+          <td class="first_cell">> file.txt</td>
+          <td class="second_cell">
+            Создает файл с названием <b>file</b> в текущей директории
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">echo "!" > table.html</td>
+          <td class="second_cell">
+            Создает файл <b>table.html</b> с <b>«!»</b> внтури
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">> new/file.txt</td>
+          <td class="second_cell">
+            Создает файл с названием <b>file</b> в заранее созданной папке
+            <b>new</b> !!!!! не создает папку!!!!
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            mkdir -p ./f1/f2/f3 && echo "sometext.." > ./f1/f2/f3/file.txt
+          </td>
+          <td class="second_cell">
+            Создает древо дерикторий, в конечном каталоге которого создает файл
+            <b>file.txt</b> с текстом внутри <b>sometext..</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            mkdir -p ./my_web/css_img/images && echo "!" > ./my_web/html.html &&
+            > ./my_web/css_img/css.css
+          </td>
+          <td class="second_cell">
+            Создает древо дерикторий с файлами внутри (html.html, css.css), в
+            файлe html создаем текст внутри (восклицательный знак !).
+            <br />Подробнее: <br />
+            <b>mkdir -p ./my_web/css_img/images</b> - создает древо директорий
+            <br /><b>echo "!"</b> - добавляет символ воскл. знак (возможно любой
+            текст) текст в файл по пути <b>> ./my_web/html.html</b> <br />
+            и дальше добавляем еще один файл без текста в данную директорию
+            <b>&& > ./my_web/css_img/css.css</b>
+          </td>
+        </tr>
+        <!-- Подраздел 4 раздела 4 Переименовывание -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Переименовывание</th>
+        </tr>
+        <tr>
+          <td class="first_cell">mv file.txt File.txt</td>
+          <td class="second_cell">
+            Команда переименовывает файл <b>file.txt</b> на <b>File.txt</b> или
+            на любое другое введенное имя в любом регистре
+          </td>
+        </tr>
+        <!-- Подраздел 5 раздела 4 Копирование -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Копирование</th>
+        </tr>
+        <tr>
+          <td class="first_cell">cp file.txt file2</td>
+          <td class="second_cell">
+            Командой <b>cp</b> создает копию файла <b>file.txt</b> с новым
+            названием. <br />
+            <b
+              >сp - команда; file.txt — название сопируемого файла file 2 —
+              название копии</b
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            cp /media/dolor/WXP_MINI10_/111/mogo1.jpg mogobg.jpg mogobird.jpg
+            <br />
+            /home/dolor/Рабочий\ стол/mogo/assets/images/
+          </td>
+          <td class="second_cell">
+            Копирование нескольких файлов из заданной директории
+            <b
+              >(/media/dolor/WXP_MINI10_/111/mogo1.jpg mogobg.jpg
+              mogobird.jpg)</b
+            >
+            <br />
+            в необходимый каталог
+            <b>(/home/dolor/Рабочий\ стол/mogo/assets/images/)</b>
+          </td>
+        </tr>
+        <!-- Подраздел 6 рездела 4  Архивация/разархивация  -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">
+            Архивация/разархивация
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">tar -cf folder_tar.tar folder/</td>
+          <td class="second_cell">Архивация папки folder в tar-архив</td>
+        </tr>
+        <tr>
+          <td class="first_cell">tar -xvf folder_tar.tar</td>
+          <td class="second_cell">Разархивация tar-архива</td>
+        </tr>
+        <tr>
+          <td class="first_cell">zip -r folder_zip folder</td>
+          <td class="second_cell">Архивация папки folder в zip-архив</td>
+        </tr>
+        <tr>
+          <td class="first_cell">unzip folder_zip.zip</td>
+          <td class="second_cell">Разархивация архива zip</td>
+        </tr>
+        <!-- Подраздел 6 рездела 4 Конвертирование -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Конвертирование</th>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            convert infile.jpg <br />file.jpg outfile.png
+          </td>
+          <td class="second_cell">
+            Программа convert служит для конвертации форматов графических
+            файлов, и для различных преобразований изображений.
+          </td>
+        </tr>
+        <!-- Подраздел 7 рездела 4 Удаление -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">Удаление</th>
+        </tr>
+        <tr>
+          <td class="first_cell">rm file.txt</td>
+          <td class="second_cell">
+            Удаляет файл с названием file с текущей директории
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">rmdir Myfolder</td>
+          <td class="second_cell">
+            Удаляет папку с названием Myfolder !!!Только если каталог пуст!!!
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">rm -rf f3/</td>
+          <td class="second_cell">
+            Команда рекурсивно удаляет директорию со всем содержимым,
+            f3-название данной папки, которую удаляем
+            <b>!!!ОПАСНО, можно удалить что-то важное!!!</b>
+          </td>
+        </tr>
+        <!-- Подраздел 8 рездела 4 Поиск файлов -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">
+            Поиск файлов, слов в файлах
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">grep «текст в файле» text.txt</td>
+          <td class="second_cell">
+            Команда ищет заданную строку в заданном текстовом файле.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">grep текст text.txt</td>
+          <td class="second_cell">
+            Команда ищет заданное слово в заданном текстовом файле.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">grep «текст в файле» -rn</td>
+          <td class="second_cell">
+            Команда ищет заданную строку в заданной директории. <br />
+            -r — grep обойдёт каталог рекурсивно <br />
+            -n — grep выведет номер строки в результатах
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            grep -rn какой /home/dolor/Рабочий\ стол/folder/
+          </td>
+          <td class="second_cell">
+            Команда рекурсивно ищет слово «какой» в заданной директории <br />
+            какой — указываем слово, которое ищем <br />
+            / home/... — указываем директорию.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">grep -rn какой /home/</td>
+          <td class="second_cell">
+            Например /home/ и будет искать по абсолютно всем файлам вложенным в
+            данный каталог
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            find Рабочий\ стол/folder/*.txt <br />find Рабочий\ стол/*/*.txt
+          </td>
+          <td class="second_cell">
+            Команда ищет файл в заданном древе или директории по имени или
+            расширению.
+          </td>
+        </tr>
+
+        <!-- Конец раздела 4 -->
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <!-- Начало раздела 5 -->
+        <th title="Раздел 5" colspan="2" class="table_header_cell">
+          <a name="Терминал"
+            ><li>
+              Запись, добавление, вывод текста, сообщений, через терминал и в
+              терминал
+            </li>
+            <li>Выполнение команд вписанных в текстовый файл</li></a
+          >
+        </th>
+        <!-- Подраздел 1 раздела 5 echo -->
+        <tr>
+          <td class="first_cell">echo</td>
+          <td class="second_cell">
+            Команда echo - это очень простая и в то же время часто используемая
+            встроенная команда оболочки Bash. Она имеет только одно назначение -
+            выводить строку текста в терминал, но применяется очень часто в
+            различных скриптах, программах, и даже для редактирования
+            конфигурационных файлов.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">echo Какой-то текст</td>
+          <td class="second_cell">
+            Выводит в терминале текстовую строку вписанную после команды, в
+            данной ситуации "Какой-то текст".
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">echo Какой-то текст > file.txt</td>
+          <td class="second_cell">
+            Запись текста «Какой-то текст» из консоли в текстовый файл
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">ls -l >file2.txt</td>
+          <td class="second_cell">
+            Записывает выводимый командой ls -l текст в уже существовавший файл
+            с названием file2.txt
+            <b
+              >!!!!!!если в файле была какая то информация то ее сотрет и
+              перезапишет этим текстом!!!!</b
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">ls -l >>file2.txt</td>
+          <td class="second_cell">
+            Добавляте в файл свои данные не стирая уже ранее имевшиеся данные
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">echo «lol» | tr «l» «w»</td>
+          <td class="second_cell">
+            Команда заменяет букву из слова «l» на нашу новую букву «w» и
+            выводит текс с произведенной заменой !!! l и w можно прописывать без
+            кавычек!!!
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">echo "LOL" | tr [:upper:] [:lower:]</td>
+          <td class="second_cell">
+            Перегоняет верхний регистр в нижний или наоборот при изменении
+            команды.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">sort text.txt</td>
+          <td class="second_cell">
+            Сортировка текста по алфавиту из файла, в терминале, но без
+            изменений в файле, при желании можно его перезаписать но уже другой
+            командой
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">cat file.txt</td>
+          <td class="second_cell">
+            Выводит текст записанный в файле с первой строки до последней в
+            терминал
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">tac file.txt</td>
+          <td class="second_cell">
+            Выводит текс записанный в файле в терминал с последней строки до
+            первой
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first_cell">pwd >file2.txt</td>
+          <td class="second_cell">
+            Так же перезапишет но укажет дерикторию в какой находимся
+          </td>
+        </tr>
+        <!-- Подраздел 2 раздела 5 Выполнение команд -->
+        <tr>
+          <th colspan="2" class="table_header_cell_second">
+            Выполнение команд вписанных в текстовый файл
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">sh zx.txt</td>
+          <td class="second_cell">
+            sh выполняет команды которые были записаны в файле zx.txt
+          </td>
+        </tr>
+
+        <!-- Конец раздела 5 -->
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <!-- Начало раздела 6 -->
+        <th title="Раздел 6" colspan="2" class="table_header_cell">
+          <a name="Процессы">
+            Диспетчер задач (windows) список всех процессов (Linux) и их
+            убийство.</a
+          >
+        </th>
+        <tr>
+          <td class="first_cell">ps</td>
+          <td class="second_cell">Вызов диспетчера задач</td>
+        </tr>
+        <tr>
+          <td class="first_cell">ps -e</td>
+          <td class="second_cell">Выводит все запущенные процессы</td>
+        </tr>
+        <tr>
+          <td class="first_cell">pstree</td>
+          <td class="second_cell">
+            Команда отображает древовидную структуру процессов
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">ps aux</td>
+          <td class="second_cell">
+            Показывает процессы, что от чего запущено и т. д. <br />
+            a = показать процессы для всех пользователей <br />
+            u = показать пользователя / владельца процесса <br />
+            x = также показать процессы, не подключенные к терминалу
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">top</td>
+          <td class="second_cell">
+            top (table of processes) — консольная команда, которая выводит
+            список работающих в системе процессов и информацию о них.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">kill -9 5615</td>
+          <td class="second_cell">
+            kill убивает процесс, -9 номер сигнала который будит убивать процесс
+            (PID), номер которого 5615
+          </td>
+        </tr>
+
+        <!-- Конец раздела 6 -->
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <!-- Начало раздела 7 -->
+        <th title="Раздел 7" colspan="2" class="table_header_cell">
+          <a name="Сеть">Сеть и трафик</a>
+        </th>
+        <tr>
+          <td class="first_cell">mtr google.com</td>
+          <td class="second_cell">
+            Программа показывает активность сети, ip и т. д.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">ping google.com</td>
+          <td class="second_cell">
+            Посылает пакеты на гугл и показывает потери этих пакетов
+          </td>
+        </tr>
+        <!-- Конец раздела 7 -->
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <!-- Начало раздела 8 -->
+        <th colspan="2" class="table_header_cell">
+          <a name="Второстепенное">Второстепенное/маловажное.</a>
+        </th>
+        <tr>
+          <th class="table_header_cell_second" colspan="2">
+            Все для программирования.
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">man ascii</td>
+          <td class="second_cell">
+            ASCII (American standard code for information interchange). Таблица
+            ASCII определяет коды для символов: <br />
+            • десятичных цифр; <br />
+            • латинского алфавита; <br />
+            • национального алфавита; <br />
+            • знаков препинания; <br />
+            • управляющих символов.
+          </td>
+        </tr>
+        <tr>
+          <th class="table_header_cell_second" colspan="2">
+            Калькулятор, генерация чисел, строк, циклы, математические операции.
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            expr 2 + 2 <br />
+            expr 2 - 2 <br />
+            expr 2 / 2 <br />
+            expr 2 \* 2
+          </td>
+          <td class="second_cell">
+            Калькулятор в терминале <br />
+            Сумирует <br />
+            Минусует <br />
+            Делит <br />
+            Умножает !!!Обязательно с обратным слешем, без него не распознает
+            команду!!!
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">factor 10</td>
+          <td class="second_cell">Команда раскладывает число на множители</td>
+        </tr>
+        <tr>
+          <td class="first_cell">look word</td>
+          <td class="second_cell">
+            Английский словарь, показывает все варианты слова, начало которого
+            забито в терминал
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">
+            sudo apt-get install athena-jot <br />
+            jot 10 1 <br />
+            jot -r 5 1 10
+          </td>
+          <td class="second_cell">
+            Установка программы Jot.
+            <p>
+              Генерация чисел 10-количество чисел которое необходимо
+              сгенерировать 1-начальное число с какого необходимо начать
+              генерацию.
+            </p>
+            r-random; 5-количество сгенерированных чисел; 1 10 - диапазон чисел
+            с каких будет сгенерирован рандом.
+          </td>
+        </tr>
+        <tr>
+          <td class="first_cell">yes какой то текст</td>
+          <td class="second_cell">
+            Команда будет выводить «какой то текст» в консоли бесконечно
+          </td>
+        </tr>
+        <tr>
+          <th class="table_header_cell_second" colspan="2">
+            Органайзер, словарь, озвучка слов
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">cal</td>
+          <td class="second_cell">Календарь на текущий месяц</td>
+        </tr>
+        <tr>
+          <td class="first_cell">cal 2020</td>
+          <td class="second_cell">Календарь за заданный год</td>
+        </tr>
+        <tr>
+          <td class="first_cell">espeak «first»</td>
+          <td class="second_cell">Команда произнесет слово на английском</td>
+        </tr>
+        <tr>
+          <td class="first_cell">look word</td>
+          <td class="second_cell">
+            Английский словарь, показывает все варианты слова, начало которого
+            забито в терминал
+          </td>
+        </tr>
+        <tr>
+          <th class="table_header_cell_second" colspan="2">
+            Администрирование
+          </th>
+        </tr>
+        <tr>
+          <td class="first_cell">wall Привет</td>
+          <td class="second_cell">
+            Если вы админ, то команда розсылает на терминалы пользователей ваше
+            сообщение
+          </td>
+        </tr>
+
+        <!-- Конец раздела 8 -->
+      </table>
+    </div>
+
+    <div class="footnote">
+      <span class="table_header_cell">Название разделов</span>
+      <span class="table_header_cell_second otstup_span">
+        Название Подразделов
+      </span>
+      <span class="opaciti_text">Скрытый,не обязательный текст</span>
+    </div>
+    <footer><a class="command_link first_cell" href="#top">TOP</a></footer>
+  </body>
+</html>

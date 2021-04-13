@@ -1,0 +1,299 @@
+/*
+
+Разъяснение к атрибутам (свойствам) тегов
+
+font-size: 30px; - размер шрифта элемента.
+
+font-weight: 700; - насыщенность шрифта. Значение устанавливается от 100 до 900 
+с шагом 100. Нормальное начертание шрифта (которое установлено по умолчанию)
+эквивалентно 400.
+
+text-transform: uppercase; - Управляет преобразованием текста элемента в заглавные 
+или прописные символы. text-transform: capitalize | lowercase | uppercase 
+| none | inherit
+
+display: inline-block; - определяет, как элемент должен быть показан в документе.
+display: block | inline | inline-block | inline-table | list-item | none | run-in 
+| table | table-caption | table-cell | table-column-group | table-column 
+| table-footer-group | table-header-group | table-row | table-row-group
+
+vertical-align: top; - Выравнивает элемент по вертикали относительно своего 
+родителя, окружающего текста или ячейки таблицы. 
+vertical-align: baseline|bottom|middle|sub|super|text-bottom|text-top|top
+|inherit | значение | проценты
+
+margin: 0 15px; Первое значение устанавливает отступ от верхнего и нижнего края,
+второе — от левого и правого. 
+Если задать margin: 0 0 0 0, то поочередно устанавливается отступ от верхнего, 
+правого, нижнего и левого края.
+
+position: relative; - Устанавливает способ позиционирования элемента относительно 
+окна браузера или других объектов на веб-странице.
+position: absolute | fixed | relative | static | inherit
+
+text-decoration: none; - подчеркивание текста снизу
+
+transition: color 3s linear; - текст плавно меняет цвет за 3 секунды при наведении
+linear означает что меняет цвет с одинаковой скоростью.
+Дополнительные параметры в место linear: transition-timing-function: 
+ease|ease-in|ease-out|ease-in-out|linear|step-start|step-end|steps|cubic-bezier 
+
+
+
+*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; /*это наружный отступ*/
+}
+
+*, /*Для всех элементов страницы box-sizing (для удобства работы, чтоб не считать padding и т. д.)*/
+*::before, /*befor и after это псевдоэлементы, для них так же прописываем box-sizing*/
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* Задал фон всему документу? */
+  background: url(images/kali_linux_wallpaper__i_am_free__by_salvoru87_d87y9t4-fullview.jpg)
+    no-repeat;
+  background-attachment: fixed; /* будет ли прокручиваться фоновое изображение вместе с содержимым элемента.*/
+  background-size: 100% 100%; /*Масштабирует фоновое изображение согласно заданным размерам.*/
+  height: 100vh;
+
+  margin: 0;
+  font-family: "Montserrat", sans-serif; /*шрифты из GoogleFonts*/
+  font-size: 15px; /*Размер шрифта*/
+  line-height: 1.6; /*Межстрочный отступ*/
+  color: purple; /*Стандартный цвет шрифта (Берется из большего количества текста)*/
+  background-color: black;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*Conteiner*/
+/*Контейнер идет на ширину страницы (!!!именно текстовки <||>*!!! от крайнего левого текста до крайнего правого)*/
+.conteiner {
+  width: 100%; /*задаем ширину контейнера 100%*/
+  max-width: 1800px; /*задаем ограничение ширины в пикселях 1800px*/
+  margin: 0 auto; /*Выравниваем по центру*/
+}
+
+/*  intro */
+
+.intro {
+  background: url(../css_img/images/59a8b947990c8.png) no-repeat;
+  background-size: 100% 100%;
+
+  /* display: flex; */
+  height: 100vh; /* означает что будет занимать 100% экрана 
+  ПОСЕТИТЕЛЯ (резиновый дизайн, если браузер не развернут на весь 
+  экран а сжат под удобство пользователя)*/
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*  intro fin */
+
+/*  header */
+
+header {
+  padding-top: 30px; /*Отступ хедера от верха страницы*/
+  width: 100%; /*Ширина на сколько можно писать в хедере*/
+
+  position: absolute; /*элементы отображаются на веб-странице словно абсолютно 
+  позиционированного элемента и нет.*/
+  top: 0; /*Прижимаем кверху (убираем отступ)*/
+  left: 0; /*Прижимаем влево (убираем отступ)*/
+  right: 0; /*Прижимаем вправо (убираем отступ)*/
+  z-index: 1000; /*Любые позиционированные элементы на веб-странице могут
+накладываться друг на друга в определенном порядке, имитируя тем самым третье
+измерение, перпендикулярное экрану. Каждый элемент может находиться как ниже, так и 
+выше других объектов веб-страницы, их размещением по z-оси и управляет z-index. 
+Это свойство работает только для элементов, у которых значение position задано 
+как absolute, fixed или relative.*/
+}
+
+.header_inner {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+
+  /*делаем флекс бокс 
+  display: flex;
+  justify-content: space-between;*/
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  /*  Отдельная настройка логотипа логотипа*/
+  font-family: "Kaushan Script", cursive;
+  font-size: 75px;
+  font-weight: 700;
+  color: black;
+  text-shadow: red 2px 2px 0;
+}
+
+/*  nav */
+
+nav {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  color: rgb(58, 58, 58);
+  display: inline-block; /*ссылки будут обтекаться другими элементами */
+  /* vertical-align: top; Выравнивание верхнего края элемента по верху самого
+  высокого элемента строки.*/
+  margin: 0 15px; /*расстояние между ссылками навигации*/
+  position: relative; /*делает подчеркивание конкретно под родительскую ссылку */
+  text-decoration: none;
+  transition: color 0.5s linear; /*текст плавно, линейно, меняет цвет*/
+}
+
+.nav_link::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+
+  height: 5px;
+
+  background-color: black;
+  opacity: 0;
+
+  position: absolute; /*Позиционируем относительно родителя? поэтому добавляем в
+   (.nav_link{position: relative;})*/
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  transition: opacity 0.5s linear;
+}
+
+.nav_link:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: rgb(255, 255, 255) 0 0 15px;
+  /* text-shadow: rgb(255, 0, 0) 2px 2px 0; */
+}
+
+.nav_link:hover::after {
+  /*при наводе*/
+  opacity: 1;
+}
+
+/* Вторая страница */
+
+/* все .back_table улетело в боди*/
+
+/* .back_table {
+  background: url(images/kali_linux_wallpaper__i_am_free__by_salvoru87_d87y9t4-fullview.jpg)
+    no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100vh;
+} */
+
+table {
+  width: 100%;
+  height: 10px;
+
+  background: rgba(0, 0, 0, 0.8);
+  color: seashell;
+
+  /* border: 4px double rgb(255, 0, 0); */
+}
+/* th{
+  
+  border: 1px solid rgb(255, 0, 0);
+} */
+
+/* Заглавие разделов таблицы */
+.table_header_cell {
+  color: red;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* Подзаглавие разделов таблицы */
+.table_header_cell_second {
+  color: darkmagenta;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* first cell on */
+/* td - data cell */
+.first_cell {
+  text-align: center;
+  width: 500px;
+  font-size: 20px;
+  font-weight: 900;
+  color: aqua;
+}
+
+.command_link {
+  color: aqua;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+.command_link:hover {
+  color: red;
+  text-shadow: rgb(255, 255, 255) 0 0 15px;
+}
+/* first cell off */
+
+/* second cell */
+.second_cell {
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* Прозрачность слов в таблице */
+.opaciti_text {
+  opacity: 0.2;
+  color: greenyellow;
+  font-weight: 900;
+}
+/* Страница три */
+.intro_three {
+  background: url(images/kali_linux_wallpaper__i_am_free__by_salvoru87_d87y9t4-fullview.jpg)
+    no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+/* .footnote > * {
+  display: inline-block;
+  text-align: center;
+
+  width: 100%;
+  margin: 0 10px;
+} */
+
+/* Отступ для сноски */
+/* .otstup_span {
+  margin: 0 100px;
+} */
+
+.footnote {
+  display: inline-block;
+  text-align: center;
+
+  width: 100%;
+}
+
+/* Отступ для сноски */
+.otstup_span {
+  margin: 0 100px;
+}
